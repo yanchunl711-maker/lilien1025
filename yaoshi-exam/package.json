@@ -15,8 +15,10 @@
     "desktop:dist": "pnpm run build && electron-builder --mac dmg zip --arm64",
     "desktop:win": "pnpm run build && electron-builder --win nsis --x64",
     "mobile:build": "VITE_DISTRIBUTION=commercial pnpm run build && ./scripts/with-node.sh node scripts/prepare-mobile-dist.mjs",
+    "mobile:build:personal": "VITE_DISTRIBUTION=commercial VITE_BUNDLED_BANK=true pnpm run build && INCLUDE_QUESTION_BANK=1 ./scripts/with-node.sh node scripts/prepare-mobile-dist.mjs",
     "mobile:add:android": "./scripts/with-node.sh cap add android",
     "mobile:sync:android": "pnpm run mobile:build && ./scripts/with-node.sh cap sync android",
+    "mobile:sync:android:personal": "pnpm run mobile:build:personal && ./scripts/with-node.sh cap sync android",
     "mobile:open:android": "./scripts/with-node.sh cap open android"
   },
   "dependencies": {

@@ -34,6 +34,7 @@ type Page = "dashboard" | "setup" | "exam" | "result" | "wrong" | "report" | "ba
 const resultKey = "yaokao-latest-result";
 const trackKey = "yaokao-track";
 const commercialDistribution = import.meta.env.VITE_DISTRIBUTION === "commercial";
+const bundledQuestionBank = import.meta.env.VITE_BUNDLED_BANK === "true";
 
 function readStoredResult(): ExamResult | null {
   try {
@@ -86,7 +87,7 @@ export default function App() {
           setQuestionBankSource("imported");
           return;
         }
-        if (commercialDistribution) return;
+        if (commercialDistribution && !bundledQuestionBank) return;
         return fetch("./data/question-bank.json")
       .then((response) => {
         if (!response.ok) throw new Error("题库加载失败");
