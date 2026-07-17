@@ -1,0 +1,17 @@
+/node_modules/
+/dist/
+/release/
+/release-mobile/
+/data/
+/artifacts/
+/docs/
+/build/
+/public/data/question-bank.json
+/public/xhs-*
+/seller-tools/license-private.pem
+/scripts/__pycache__/
+*.tsbuildinfo
+/vite.config.js
+/vite.config.d.ts
+*.log
+.DS_Store

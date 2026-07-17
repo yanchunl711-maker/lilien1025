@@ -1,0 +1,117 @@
+{
+  "name": "yaoshi-exam",
+  "private": true,
+  "version": "1.1.0",
+  "description": "离线执业药师题库练习与模拟考试桌面应用",
+  "main": "electron/main.cjs",
+  "author": "执药备考工具",
+  "type": "module",
+  "scripts": {
+    "dev": "./scripts/with-node.sh vite",
+    "build": "./scripts/with-node.sh tsc -b && ./scripts/with-node.sh vite build",
+    "preview": "./scripts/with-node.sh vite preview",
+    "desktop:preview": "pnpm run build && electron .",
+    "desktop:pack": "pnpm run build && electron-builder --mac dir --arm64",
+    "desktop:dist": "pnpm run build && electron-builder --mac dmg zip --arm64",
+    "desktop:win": "pnpm run build && electron-builder --win nsis --x64",
+    "mobile:build": "VITE_DISTRIBUTION=commercial pnpm run build && ./scripts/with-node.sh node scripts/prepare-mobile-dist.mjs",
+    "mobile:add:android": "./scripts/with-node.sh cap add android",
+    "mobile:sync:android": "pnpm run mobile:build && ./scripts/with-node.sh cap sync android",
+    "mobile:open:android": "./scripts/with-node.sh cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.4.2",
+    "@capacitor/core": "8.4.2",
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.4.2",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "typescript": "latest"
+  },
+  "build": {
+    "appId": "com.zhiyk.desktop",
+    "productName": "执药备考工具",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "build/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "执药备考工具",
+      "installerLanguages": [
+        "zh_CN"
+      ]
+    },
+    "dmg": {
+      "title": "执药备考工具 ${version}",
+      "backgroundColor": "#f4f8f5",
+      "window": {
+        "width": 560,
+        "height": 380
+      },
+      "contents": [
+        {
+          "x": 150,
+          "y": 190,
+          "type": "file"
+        },
+        {
+          "x": 410,
+          "y": 190,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "artifactName": "执药备考工具-${version}-${arch}.${ext}"
+  }
+}

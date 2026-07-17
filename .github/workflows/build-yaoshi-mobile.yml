@@ -1,0 +1,70 @@
+name: Build Yaoshi Android APK
+
+on:
+  push:
+    branches:
+      - codex/mobile-apk-build
+    paths-ignore:
+      - "yaoshi-exam/release-mobile/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.7.0
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install dependencies
+        working-directory: yaoshi-exam
+        run: pnpm install --frozen-lockfile
+
+      - name: Prepare Android project
+        working-directory: yaoshi-exam
+        run: pnpm run mobile:sync:android
+
+      - name: Build debug APK
+        working-directory: yaoshi-exam/android
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Collect APK
+        run: |
+          mkdir -p yaoshi-exam/release-mobile
+          cp yaoshi-exam/android/app/build/outputs/apk/debug/app-debug.apk "yaoshi-exam/release-mobile/执药备考-Android-1.1.0.apk"
+          shasum -a 256 "yaoshi-exam/release-mobile/执药备考-Android-1.1.0.apk" > "yaoshi-exam/release-mobile/执药备考-Android-1.1.0.apk.sha256"
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: yaoshi-android-apk
+          path: yaoshi-exam/release-mobile/*
+
+      - name: Commit APK to build branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f yaoshi-exam/release-mobile/
+          git commit -m "build: add Android APK [skip ci]"
+          git push
