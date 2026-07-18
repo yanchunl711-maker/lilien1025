@@ -48,3 +48,26 @@ Known from vault contents:
 
 - Contains design, narration, and regeneration planning notes for a video project.
 
+## WeChat Article Sync
+
+Path:
+
+`/Users/liyanchun/Documents/New project/微信公众号文章`
+
+Current setup:
+
+- Local article archive exists inside the vault workspace.
+- Obsidian community plugins currently include `wechat-obsync` and `obsidian-git`.
+- Recent saved items include toxicology and biomedical-tooling articles and short link placeholder captures that may need later cleanup.
+
+## Computer File Archive
+
+Path:
+
+`/Users/liyanchun/Documents/New project/电脑文件归档`
+
+Current setup:
+
+- A large local-only archive of Desktop and Documents content was recorded on 2026-07-18.
+- Archive rules exclude large files, videos, packages, app bundles, build directories, hidden items, and suspected secret-bearing files from copying.
+- The archive directory is intended for local retention and is excluded from GitHub sync because of size and sensitivity boundaries.

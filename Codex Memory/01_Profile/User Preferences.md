@@ -8,6 +8,7 @@ Last updated: 2026-07-18
 - User often wants Codex to act directly rather than only explain.
 - Use concise, practical status updates while working.
 - For non-technical tasks, avoid unnecessary technical detail unless it helps the user make a decision.
+- For reviews and status summaries, report access gaps explicitly instead of inferring inaccessible conversations or external records.
 
 ## Working Style
 
@@ -20,4 +21,3 @@ Last updated: 2026-07-18
 - Do not expose private keys, passwords, tokens, OTPs, or payment details.
 - Public keys can be shared when needed for SSH setup.
 - Ask before destructive actions such as deleting files, force pushes, resets, or changing access permissions.
-
