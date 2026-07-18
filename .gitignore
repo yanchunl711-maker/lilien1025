@@ -11,3 +11,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Large local Obsidian archive (not suitable for GitHub sync)
+电脑文件归档/
