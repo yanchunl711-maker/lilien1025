@@ -2,6 +2,7 @@
 .obsidian/workspace
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/plugins/wechat-obsync/data.json
 
 # OS files
 .DS_Store
