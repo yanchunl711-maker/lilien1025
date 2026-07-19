@@ -24,6 +24,7 @@ Current setup:
 - Obsidian Git plugin installed in `.obsidian/plugins/obsidian-git`
 - WeChat Inbox Sync plugin installed in `.obsidian/plugins/wechat-inbox-sync`
 - WeChat Obsync plugin is also present in `.obsidian/plugins/wechat-obsync`
+- Extract URL plugin is installed in `.obsidian/plugins/extract-url`
 - Git remote uses SSH
 
 ## Yaoshi Exam Project
@@ -62,8 +63,9 @@ Path:
 Current setup:
 
 - Local article archive exists inside the vault workspace.
-- Obsidian community plugins currently include `wechat-obsync` and `obsidian-git`.
+- Obsidian community plugins currently include `obsidian-git`, `wechat-inbox-sync`, `wechat-obsync`, and `extract-url`.
 - Recent saved items include toxicology and biomedical-tooling articles and short link placeholder captures that may need later cleanup.
+- A dated root note `2026-07-19.md` confirms WeChat Inbox Sync is actively creating daily collection notes and placeholder link captures under `临时收集/2026-07-19/`.
 
 ## Computer File Archive
 
