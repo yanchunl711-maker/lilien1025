@@ -22,6 +22,8 @@ Current setup:
 
 - Obsidian installed in `/Applications/Obsidian.app`
 - Obsidian Git plugin installed in `.obsidian/plugins/obsidian-git`
+- WeChat Inbox Sync plugin installed in `.obsidian/plugins/wechat-inbox-sync`
+- WeChat Obsync plugin is also present in `.obsidian/plugins/wechat-obsync`
 - Git remote uses SSH
 
 ## Yaoshi Exam Project
