@@ -1,6 +1,6 @@
 # Project Index
 
-Last updated: 2026-07-18
+Last updated: 2026-07-19
 
 ## Obsidian Memory Vault
 
@@ -37,6 +37,9 @@ Known from vault contents:
 - React/Vite/Electron/Capacitor exam-prep app.
 - Includes desktop and Android release artifacts.
 - Contains sales materials and buyer instructions.
+- Contains a 35-second 1080x1920 real-operation video with Chinese narration, showing the 3,580-question dashboard, subject switching, instant explanations, mock exams, and study reports.
+- Final video, cover, and platform copy are also organized at `/Users/liyanchun/Desktop/执业药师项目-全部资料/04_发布宣传素材/视频发布素材`.
+- On 2026-07-19 the video was published successfully to Xiaohongshu and submitted to Douyin, where it entered review. Xianyu web publishing currently accepts image formats only, so the MP4 was sent to WeChat File Transfer Assistant for completion in the mobile app.
 
 Future work should inspect project memory and repository state before changing files.
 

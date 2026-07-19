@@ -1,6 +1,16 @@
 # Decision Log
 
-Last updated: 2026-07-18
+Last updated: 2026-07-19
+
+## 2026-07-19 - Video-first Product Demonstrations
+
+Decision: use short vertical real-operation videos as the primary promotional format for the Yaoshi Exam product instead of relying on static image posts.
+
+Reason:
+
+- Real interaction footage demonstrates the question count, answering workflow, explanations, mock exams, and reports more credibly than screenshots.
+- A 9:16 format can be reused on Xiaohongshu, Douyin, and Xianyu mobile publishing.
+- Marketing copy should keep the product positioned as a third-party learning aid and avoid promises of guaranteed results, leaked questions, or official affiliation.
 
 ## 2026-07-18 - Obsidian as Codex Permanent Memory
 
@@ -37,4 +47,3 @@ Implementation:
 - Installed `obsidian-git` plugin.
 - Created SSH key titled `Mac Obsidian Sync`.
 - Pushed initial vault backup to GitHub.
-
