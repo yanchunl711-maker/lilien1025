@@ -1,6 +1,6 @@
 # Project Index
 
-Last updated: 2026-07-19
+Last updated: 2026-07-20
 
 ## Obsidian Memory Vault
 
@@ -22,10 +22,8 @@ Current setup:
 
 - Obsidian installed in `/Applications/Obsidian.app`
 - A new information-organization structure now exists in the vault, centered on `00_Inbox/`, `10_Projects/`, `20_Knowledge/`, `30_References/`, `40_Daily/`, and `90_Templates/`.
-- Obsidian Git plugin installed in `.obsidian/plugins/obsidian-git`
-- WeChat Inbox Sync plugin installed in `.obsidian/plugins/wechat-inbox-sync`
-- WeChat Obsync plugin is also present in `.obsidian/plugins/wechat-obsync`
-- Extract URL plugin is installed in `.obsidian/plugins/extract-url`
+- Current enabled community plugins in `.obsidian/community-plugins.json` are `obsidian-git`, `wechat-inbox-sync`, `extract-url`, `realclaudian`, `calendar`, `obsidian-excalidraw-plugin`, and `ishibashi-web-clipper-next`.
+- `wechat-obsync` is still present on disk in `.obsidian/plugins/wechat-obsync`, but it is not in the current enabled-plugin list.
 - Git remote uses SSH
 
 ## Yaoshi Exam Project
