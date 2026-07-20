@@ -37,3 +37,19 @@ Recommended plugin settings:
 - Push after commit: enabled
 - Auto backup interval: user may choose 10-30 minutes
 
+## Obsidian Information Organization Workflow
+
+Use the root note `资料整理入口.md` as the main dashboard for collected materials.
+
+Default collection and triage flow:
+
+1. Put unsorted material into `临时收集/`, `微信公众号文章/`, `00_Inbox/`, or `Codex Memory/00_Inbox/`.
+2. Review new material from `40_Daily/今日整理.md` or `资料处理看板.md`.
+3. Move project material to `10_Projects/`.
+4. Move reusable knowledge to `20_Knowledge/`.
+5. Move external references, PDFs, web clips, videos, and articles to `30_References/`.
+6. Keep daily notes and review notes in `40_Daily/`.
+7. Store templates in `90_Templates/`.
+8. Write durable preferences, workflows, plans, decisions, and project summaries into `Codex Memory/`.
+
+When Codex helps organize new Obsidian material, prefer this structure unless the user gives a more specific destination.

@@ -1,6 +1,27 @@
 # Decision Log
 
-Last updated: 2026-07-19
+Last updated: 2026-07-20
+
+## 2026-07-20 - Obsidian Information Organization System
+
+Decision: use a lightweight inbox-to-index structure for organizing collected materials in the Obsidian vault.
+
+Structure:
+
+- `资料整理入口.md` as the main dashboard.
+- `资料处理看板.md` as the triage board.
+- `00_Inbox/` for unsorted material.
+- `10_Projects/` for project materials.
+- `20_Knowledge/` for reusable knowledge.
+- `30_References/` for external articles, PDFs, web clips, and media links.
+- `40_Daily/` for daily organization and reviews.
+- `90_Templates/` for reusable note templates.
+
+Reason:
+
+- The user collects material from WeChat, web clippers, Codex work, and project files.
+- A single inbox plus periodic triage reduces folder sprawl.
+- Templates make later AI summarization and GitHub sync more consistent.
 
 ## 2026-07-19 - Video-first Product Demonstrations
 
