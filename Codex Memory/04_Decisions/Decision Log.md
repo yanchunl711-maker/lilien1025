@@ -1,6 +1,17 @@
 # Decision Log
 
-Last updated: 2026-07-20
+Last updated: 2026-07-21
+
+## 2026-07-21 - Pause and Consolidate Obsidian Automations
+
+Decision: pause all Obsidian-related scheduled work and consolidate it under one automation named `Obsidian 统一维护`.
+
+Implementation:
+
+- The unified automation remains paused until the user explicitly resumes it.
+- It contains both WeChat inbox synchronization and the daily Codex permanent-memory review workflow.
+- The former standalone `Obsidian WeChat Inbox Auto Sync` automation was removed after its workflow was merged.
+- Non-Obsidian automations were left unchanged.
 
 ## 2026-07-20 - Obsidian Information Organization System
 
