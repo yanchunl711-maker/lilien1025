@@ -39,6 +39,7 @@ Known from vault contents:
 - Contains sales materials and buyer instructions.
 - Contains a 35-second 1080x1920 real-operation video with Chinese narration, showing the 3,580-question dashboard, subject switching, instant explanations, mock exams, and study reports.
 - Final video, cover, and platform copy are also organized at `/Users/liyanchun/Desktop/执业药师项目-全部资料/04_发布宣传素材/视频发布素材`.
+- A six-image Windows 10/11 interface screenshot set was added on 2026-07-24, covering the dashboard, focused-practice setup, instant explanations, mock exam, study report, and 3,580-question local bank. The finished set is stored at `/Users/liyanchun/Desktop/执业药师项目-全部资料/04_发布宣传素材/Windows版界面截图`.
 - On 2026-07-19 the video was published successfully to Xiaohongshu and Douyin. Xianyu web publishing currently accepts image formats only, so the MP4 was sent to WeChat File Transfer Assistant for completion in the mobile app.
 
 Future work should inspect project memory and repository state before changing files.
