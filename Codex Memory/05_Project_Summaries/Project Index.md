@@ -1,6 +1,6 @@
 # Project Index
 
-Last updated: 2026-07-21
+Last updated: 2026-08-09
 
 ## Obsidian Memory Vault
 
@@ -53,6 +53,20 @@ Path:
 Known from vault contents:
 
 - Contains design, narration, and regeneration planning notes for a video project.
+
+## MediaCrawler
+
+Path:
+
+`/Users/liyanchun/Documents/New project/MediaCrawler`
+
+Current setup:
+
+- Installed from `NanmiCoder/MediaCrawler` on 2026-08-09 at commit `071c8c0`.
+- Uses a project-local Python 3.11.15 environment managed by `uv`; Python dependencies are installed and the CLI help command is verified.
+- A project-local Node.js 24.14.0 executable is available in `.venv/bin` for JavaScript-dependent platform support.
+- Google Chrome 151 is installed. Before using the default CDP mode, manually enable remote debugging at `chrome://inspect/#remote-debugging` and accept Chrome's connection prompt.
+- No platform login or data crawl was performed during installation.
 
 ## WeChat Article Sync
 
